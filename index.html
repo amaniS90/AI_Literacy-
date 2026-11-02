@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الاختبار القبلي - الثقافة الرقمية والوعي بالذكاء الاصطناعي</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: #f8fafc;
+        }
+    </style>
+</head>
+<body class="min-h-screen py-10 px-4 sm:px-6 lg:px-8">
+
+    <div class="max-w-3xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden border border-slate-100">
+        
+        <!-- الهيدر الخاص بالحقيبة -->
+        <div class="bg-gradient-to-r from-blue-900 to-indigo-800 text-white p-8 text-center">
+            <span class="inline-block bg-blue-700/60 text-blue-100 text-xs font-medium px-3 py-1 rounded-full mb-3">برنامج تدريبي توعوي وتطبيقي</span>
+            <h1 class="text-2xl sm:text-3xl font-extrabold mb-2">الثقافة الرقمية والوعي بالذكاء الاصطناعي</h1>
+            <p class="text-blue-200 text-sm sm:text-base font-medium">AI Literacy & Practical GenAI Awareness</p>
+            <div class="mt-4 pt-4 border-t border-blue-800/60 text-xs sm:text-sm text-blue-200 flex justify-center gap-6">
+                <span>إعداد: د. أماني آل عنيزان</span>
+                <span>|</span>
+                <span>الاختبار القبلي للمشاركين</span>
+            </div>
+        </div>
+
+        <!-- محتوى النموذج -->
+        <form id="preTestForm" class="p-6 sm:p-8 space-y-8">
+            
+            <!-- معلومات المشارك الأساسية -->
+            <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 space-y-4">
+                <h2 class="text-lg font-bold text-slate-800 border-b pb-2 flex items-center gap-2">
+                    <span class="w-2 h-2 bg-blue-600 rounded-full"></span> بيانات المشارك
+                </h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-sm font-medium text-slate-700 mb-1">الاسم الكريم (اختياري)</label>
+                        <input type="text" id="participant_name" class="w-full rounded-lg border border-slate-300 p-2.5 text-sm focus:ring-2 focus:ring-blue-500 focus:outline-none bg-white" placeholder="أدخل اسمك">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-slate-700 mb-1">الجهة / الإدارة</label>
+                        <input type="text" id="participant_dept" class="w-full rounded-lg border border-slate-300 p-2.5 text-sm focus:ring-2 focus:ring-blue-500 focus:outline-none bg-white" placeholder="مثال: التقنية، المالية، الموارد البشرية...">
+                    </div>
+                </div>
+            </div>
+
+            <!-- الأسئلة العشرة من الحقيبة -->
+            <div class="space-y-6">
+                
+                <!-- س 1 -->
+                <div class="p-5 rounded-xl border border-slate-200 bg-white shadow-xs">
+                    <label class="block font-bold text-slate-800 mb-3">1. ما هو التعريف الأدق للذكاء الاصطناعي (AI)؟</label>
+                    <div class="space-y-2 text-sm text-slate-700">
+                        <label class="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-50 cursor-pointer">
+                            <input type="radio" name="q1" value="أنظمة برمجية مصممة خصيصاً لإدارة شبكات الاتصالات فقط." class="text-blue-600 focus:ring-blue-500" required>
+                            <span>أنظمة برمجية مصممة خصيصاً لإدارة شبكات الاتصالات فقط.</span>
+                        </label>
+                        <label class="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-50 cursor-pointer">
+                            <input type="radio" name="q1" value="قدرة الأنظمة الحاسوبية على أداء مهام تتطلب عادة ذكاءً بشرياً، كالتعلم والاستنتاج واتخاذ القرار." class="text-blue-600 focus:ring-blue-500">
+                            <span>قدرة الأنظمة الحاسوبية على أداء مهام تتطلب عادة ذكاءً بشرياً، كالتعلم والاستنتاج واتخاذ القرار.</span>
+                        </label>
+                        <label class="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-50 cursor-pointer">
+                            <input type="radio" name="q1" value="مجموعة من الأجهزة والمعدات الصلبة التي لا تعتمد على البرمجيات." class="text-blue-600 focus:ring-blue-500">
+                            <span>مجموعة من الأجهزة والمعدات الصلبة التي لا تعتمد على البرمجيات.</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- س 2 -->
+                <div class="p-5 rounded-xl border border-slate-200 bg-white shadow-xs">
+                    <label class="block font-bold text-slate-800 mb-3">2. يقصد بمصطلح "الذكاء الاصطناعي التوليدي" (GenAI):</label>
+                    <div class="space-y-2 text-sm text-slate-700">
+                        <label class="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-50 cursor-pointer">
+                            <input type="radio" name="q2" value="فئة من الذكاء الاصطناعي قادرة على إنشاء محتوى جديد (نص، صورة، صوت) بناءً على أوامر يكتبها المستخدم." class="text-blue-600 focus:ring-blue-500" required>
+                            <span>فئة من الذكاء الاصطناعي قادرة على إنشاء محتوى جديد (نص، صورة، صوت) بناءً على أوامر يكتبها المستخدم.</span>
+                        </label>
+                        <label class="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-50 cursor-pointer">
+                            <input type="radio" name="q2" value="أنظمة مخصصة فقط للأرشفة الإلكترونية وحفظ المستندات الرسمية." class="text-blue-600 focus:ring-blue-500">
+                            <span>أنظمة مخصصة فقط للأرشفة الإلكترونية وحفظ المستندات الرسمية.</span>
+                        </label>
+                        <label class="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-50 cursor-pointer">
+                            <input type="radio" name="q2" value="برمجيات تحليل الأرقام والعمليات الحسابية البسيطة." class="text-blue-600 focus:ring-blue-500">
+                            <span>برمجيات تحليل الأرقام والعمليات الحسابية البسيطة.</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- س 3 -->
+                <div class="p-5 rounded-xl border border-slate-200 bg-white shadow-xs">
+                    <label class="block font-bold text-slate-800 mb-3">3. ما المقصود بـ "نماذج اللغة الكبيرة" (LLMs)؟</label>
+                    <div class="space-y-2 text-sm text-slate-700">
+                        <label class="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-50 cursor-pointer">
+                            <input type="radio" name="q3" value="برامج لترجمة اللغات الأجنبية فقط عبر القواميس التقليدية." class="text-blue-600 focus:ring-blue-500" required>
+                            <span>برامج لترجمة اللغات الأجنبية فقط عبر القواميس التقليدية.</span>
+                        </label>
+                        <label class="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-50 cursor-pointer">
+                            <input type="radio" name="q3" value="نماذج ذكاء اصطناعي مدرَّبة على كميات ضخمة من النصوص لتكون قادرة على فهم اللغة وتوليدها." class="text-blue-600 focus:ring-blue-500">
+                            <span>نماذج ذكاء اصطناعي مدرَّبة على كميات ضخمة من النصوص لتكون قادرة على فهم اللغة وتوليدها.</span>
+                        </
